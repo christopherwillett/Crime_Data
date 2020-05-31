@@ -1,3 +1,6 @@
+#We need to load the readxl library to gring the .xls file in to R.
+library(readxl)
+
 #Load the FBI's UCR Data Set from 2016. First three rows are only informational.
 alldat <- read_excel("data/crimedat.xls",skip=3)
 
